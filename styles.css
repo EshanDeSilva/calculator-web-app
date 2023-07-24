@@ -7,15 +7,35 @@
   justify-content: center;
   font-weight: bold;
   font-size: x-large;
-  margin: 3px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px;
+}
+.out{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .func{
   background-color: orange;
+  color: white;
+}
+.numbers{
+  background-color: rgb(51, 49, 49);
+  color: white;
 }
 .other{
   background-color: rgb(157, 156, 156);
 }
 #tbl{
-  background-color: rgba(12, 12, 12, 0.937);
+  background-color: rgb(5, 5, 5);
   border-radius: 10px;
 }
