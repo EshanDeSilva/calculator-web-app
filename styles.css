@@ -8,21 +8,24 @@
   font-weight: bold;
   font-size: x-large;
   margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
   border: 0px;
+  cursor: pointer;
 }
 .out{
   color: white;
-  font-size: 40px;
+  width: 250px;
+  height: 40px;
+  font-size: 25px;
   font-weight: bold;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: flex;
-  align-content: center;
-  justify-content: right;
-  margin-right: 5px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: right;
 }
 .func{
   background-color: orange;
