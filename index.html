@@ -2,25 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <table id="tbl">
       <th colspan="4">
-        <input class="out" type="text">
-        <!-- <td >
-          
-        </td> -->
+        <input class="out" id="txt" type="text">
       </th>
       <tr>
         <tr>
           <td>
-            <button class="btn other" id="btn-ac">AC</button>
+            <button class="btn other" id="btn-ac" onclick="ac()">AC</button>
           </td>
           <td>
-            <button class="btn other" id="btn-arrow">🡄</button>
+            <button class="btn other" id="btn-arrow" onclick="clearValue()">🡄</button>
           </td>
           <td>
             <button class="btn other" id="btn-present">%</button>
@@ -31,13 +28,13 @@
         </tr>
         <tr>
           <td>
-            <button class="btn numbers" id="btn-7">7</button>
+            <button class="btn numbers" id="btn-7" onclick="seven()">7</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-8">8</button>
+            <button class="btn numbers" id="btn-8" onclick="eight()">8</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-9">9</button>
+            <button class="btn numbers" id="btn-9" onclick="nine()">9</button>
           </td>
           <td>
             <button class="btn func" id="btn-multi">x</button>
@@ -45,13 +42,13 @@
         </tr>
         <tr>
           <td>
-            <button class="btn numbers" id="btn-4">4</button>
+            <button class="btn numbers" id="btn-4" onclick="four()">4</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-5">5</button>
+            <button class="btn numbers" id="btn-5" onclick="five()">5</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-6">6</button>
+            <button class="btn numbers" id="btn-6" onclick="six()">6</button>
           </td>
           <td>
             <button class="btn func" id="btn-sub">-</button>
@@ -59,13 +56,13 @@
         </tr>
         <tr>
           <td>
-            <button class="btn numbers" id="btn-1">1</button>
+            <button class="btn numbers" id="btn-1" onclick="one()">1</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-2">2</button>
+            <button class="btn numbers" id="btn-2" onclick="two()">2</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-3">3</button>
+            <button class="btn numbers" id="btn-3" onclick="three()">3</button>
           </td>
           <td>
             <button class="btn func" id="btn-add">+</button>
@@ -73,13 +70,13 @@
         </tr>
         <tr>
           <td>
-            <button class="btn numbers" id="btn-0">0</button>
+            <button class="btn numbers" id="btn-0" onclick="zero()">0</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-00">00</button>
+            <button class="btn numbers" id="btn-00" onclick="doubleZero()">00</button>
           </td>
           <td>
-            <button class="btn numbers" id="btn-point">.</button>
+            <button class="btn numbers" id="btn-point" onclick="point()">.</button>
           </td>
           <td>
             <button class="btn func" id="btn-eqal">=</button>
@@ -87,5 +84,7 @@
         </tr>
       </tr>
     </table>
+
+    <script src="app.js"></script>
   </body>
 </html>
